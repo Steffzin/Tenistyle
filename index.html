@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loja de Tênis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+        
+</head>
+<body>
+    <header>
+        <img id="logo-art" src="img/logo.gif" alt="">
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><img class="icon-car" src="img/carrinho.png" alt="" id="openalMod"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel de Imagens -->
+  
+    <section id="carrossel">
+        <div class="carousel-container">
+          <a href="">
+            <div><img src="img/banner1.gif" alt="Promoção 1"></div>
+          </a>
+          <a href="">
+            <div><img src="img/banner2.gif" alt="Promoção 2"></div>
+          </a>
+          <a href="">
+            <div><img src="img/banner3.gif" alt="Promoção 3"></div>
+          </a>
+        </div>
+    </section>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems"></ul>
+            <div class="total">
+                <strong>Total: R$ <span id="totalPrice">0,00</span></strong>
+            </div>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <section id="produtos">
+        <h2>Nosso Catálogo</h2>
+        <a href="esportivo.html">
+            <div class="produto">
+                <img src="img/esportivo.gif" alt="Tênis Esportivo">
+                <h3>Tênis Esportivo</h3>
+                <p>R$ 199,90</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+        <a href="casual.html">
+            <div class="produto">
+                <img src="img/casual.gif" alt="Tênis Casual">
+                <h3>Tênis Casual</h3>
+                <p>R$ 149,90</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+        <a href="corrida.html"> 
+            <div class="produto">
+                <img src="img/corrida.gif" alt="Tênis de Corrida">
+                <h3>Tênis de Corrida</h3>
+                <p>R$ 249,90</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+        <a href="chuteira.html"> 
+            <div class="produto">
+                <img src="img/chuteira.gif" alt="Chuteira">
+                <h3>Chuteira</h3>
+                <p>R$ 349,90</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+        <a href="chinelo.html"> 
+            <div class="produto">
+                <img src="img/chinelo.gif" alt="Chinelo">
+                <h3>Chinelo</h3>
+                <p>R$ 89,99</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+        <a href="skate.html"> 
+            <div class="produto">
+                <img src="img/skate.gif" alt="Tênis de Skate">
+                <h3>Tênis de Skate</h3>
+                <p>R$ 229,90</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+        <a href="luxo.html"> 
+            <div class="produto">
+                <img src="img/luxo.gif" alt="Tênis de Luxo">
+                <h3>Tênis de Luxo</h3>
+                <p>R$ 999,90</p>
+                <button>Ver mais</button>
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tenistyle - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>

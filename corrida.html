@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detalhes do Produto - Tênis Esportivo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img id="logo-art" src="img/logo.gif" alt="">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><img class="icon-car" src="img/carrinho.png" alt="" id="openalMod"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems"></ul>
+            <div class="total">
+                <strong>Total: R$ <span id="totalPrice">0,00</span></strong>
+            </div>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <section id="detalhes-produto">
+        <div class="produto-container">
+            <div class="produto-imagem">
+                <img src="img/corrida.gif" alt="Tênis Esportivo">
+            </div>
+            <div class="produto-detalhes">
+                <h1>Tênis de Corrida</h1>
+                <p class="desconto"> R$ 489,90 por</p>
+                <p class="preco">R$ 349,90</p>
+                <p class="descricao">
+                    Nosso Tênis de corrida foi projetado para máxima performance em suas corridas ou caminhadas, com sua placa de fibra-de-carbono para melhor retorno de energia. Ideal para atividades longas provas , oferece uma estrutura leve e confortável.
+                </p>
+                <p><strong>Disponibilidade:</strong> Em estoque</p>
+
+                <button class="botao-comprar" onclick="addToCart('Corrida', 349.90)" >Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tenistyle - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

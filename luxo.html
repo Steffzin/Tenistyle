@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detalhes do Produto - Tênis de Luxo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img id="logo-art" src="img/logo.gif" alt="">
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><img class="icon-car" src="img/carrinho.png" alt="" id="openalMod"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems"></ul>
+            <div class="total">
+                <strong>Total: R$ <span id="totalPrice">0,00</span></strong>
+            </div>
+            <button id="checkout">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <section id="detalhes-produto">
+        <div class="produto-container">
+            <div class="produto-imagem">
+                <img src="img/luxo.gif" alt="Chuteira">
+            </div>
+            <div class="produto-detalhes">
+                <h1>Tênis de Skate</h1>
+                <p class="desconto"> R$ 1549,90 por</p>
+                <p class="preco">R$ 999,90</p>
+                <p class="descricao">
+                    Nosso tênis de Luxo é uma escolha elegante e confortável, para quem busca um calçado versátil que transita entre o casual e o sofisticado.
+                </p>
+                <p><strong>Disponibilidade:</strong> Em estoque</p>
+
+                <button class="botao-comprar" onclick="addToCart('Luxo', 999,90)" >Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tenistyle - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
